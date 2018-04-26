@@ -123,18 +123,89 @@ angular
 
   //pramod109
   //Routing for Registration Module
-  
   .state('app.registration', {
     url: '/registration',
     templateUrl: 'authentication/registration/registration.html',
     ncyBreadcrumb: {
-      label: 'Widgets'
+      label: 'Registration'
     },
     resolve: {
       loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
         // you can lazy load controllers
         return $ocLazyLoad.load({
           files: ['authentication/registration/registration.component.js']
+        });
+      }]
+    }
+  })
+
+  //pramod109
+  //Routing for clients module
+  .state('app.clients', {
+    url: '/clients',
+    templateUrl: 'clients/clients.html',
+    ncyBreadcrumb: {
+      label: 'Clients'
+    },
+    resolve: {
+      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load controllers
+        return $ocLazyLoad.load({
+          files: ['clients/clients.controller.js']
+        });
+      }]
+    }
+  })
+
+  //pramod109
+  //Routing for client-issues module
+  .state('app.client-issues', {
+    url: '/client-issues',
+    templateUrl: 'client-issues/client-issues.html',
+    ncyBreadcrumb: {
+      label: 'Client Issues'
+    },
+    resolve: {
+      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load controllers
+        return $ocLazyLoad.load({
+          files: ['client-issues/client-issues.controller.js']
+        });
+      }]
+    }
+  })
+
+  //pramod109
+  //Routing for plans module
+  .state('app.plans', {
+    url: '/plans',
+    templateUrl: 'plans/plans.html',
+    ncyBreadcrumb: {
+      label: 'Plans'
+    },
+    resolve: {
+      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load controllers
+        return $ocLazyLoad.load({
+          files: ['plans/plans.controller.js']
+        });
+      }]
+    }
+  })
+
+  //pramod109
+  //Routing for suppliers module
+  .state('app.suppliers', {
+    url: '/suppliers',
+    templateUrl: 'suppliers/suppliers.html',
+    ncyBreadcrumb: {
+      label: 'Suppliers'
+    },
+    resolve: {
+      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load controllers
+        return $ocLazyLoad.load({
+          files: ['suppliers/suppliers.controller.js']
         });
       }]
     }

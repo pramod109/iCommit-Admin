@@ -1,4 +1,4 @@
-//component for registration
+//controller for registration
 (function() {
     'use strict';
 
