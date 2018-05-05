@@ -1,16 +1,16 @@
-//service for the customers page
+//service for the main page
 (function () {
     'use strict';
 
     angular.module('app')
-        .service('CustomersService', ['$resource', 'BASE_URL', CustomersService]);
+        .service('MainService', ['$resource', 'BASE_URL', MainService]);
 
     /**
-     * @module CustomersService
+     * @module MainService
      * @description
-     * Service required for Customers Page
+     * Service required for Main Page
      */
-    // function CustomersService($resource, BASE_URL) {
+    // function MainService($resource, BASE_URL) {
 
     //     this.template = function () {
     //         return $resource(BASE_URL + '/self/loans/template');
