@@ -301,4 +301,22 @@ angular
     }
   })
 
+  //pramod109
+  //Routing for new-customer module
+  .state('app.new-customer', {
+    url: '/new-customer',
+    templateUrl: 'customers/new-customer/new-customer.html',
+    ncyBreadcrumb: {
+      label: 'Customers  /  New Customer'
+    },
+    resolve: {
+      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load controllers
+        return $ocLazyLoad.load({
+          files: ['customers/new-customer/new-customer.controller.js']
+        });
+      }]
+    }
+  })
+
 }]);
