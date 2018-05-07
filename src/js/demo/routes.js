@@ -319,4 +319,22 @@ angular
     }
   })
 
+  //pramod109
+  //Routing for new-supplier module
+  .state('app.new-supplier', {
+    url: '/new-supplier',
+    templateUrl: 'suppliers/new-supplier/new-supplier.html',
+    ncyBreadcrumb: {
+      label: 'Suppliers  /  New Supplier'
+    },
+    resolve: {
+      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load controllers
+        return $ocLazyLoad.load({
+          files: ['suppliers/new-supplier/new-supplier.controller.js']
+        });
+      }]
+    }
+  })
+
 }]);
