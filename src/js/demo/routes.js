@@ -159,17 +159,17 @@ angular
 
   //pramod109
   //Routing for client-issues module
-  .state('app.issues', {
-    url: '/issues',
-    templateUrl: 'issues/issues.html',
+  .state('app.client-issues', {
+    url: '/client-issues',
+    templateUrl: 'client-issues/client-issues.html',
     ncyBreadcrumb: {
-      label: 'Issues'
+      label: 'Customer Issues'
     },
     resolve: {
       loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
         // you can lazy load controllers
         return $ocLazyLoad.load({
-          files: ['issues/issues.controller.js']
+          files: ['client-issues/client-issues.controller.js']
         });
       }]
     }
