@@ -1,0 +1,93 @@
+<div ng-controller="NewProductLineCtrl">
+    <div class="col-sm-9">
+        <div class="card">
+            <div class="card-header">
+                <strong>New Product Line Details</strong>
+                <small>Form</small>
+
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="select1">Product</label>
+                    <div class="col-md-3">
+                        <select id="select1" name="select" class="form-control" size="1" style="float: left;">
+                            <option value="0">Please select</option>
+                            <option value="1">Option #1</option>
+                            <option value="2">Option #2</option>
+                            <option value="3">Option #3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="select1">Currency</label>
+                    <div class="col-md-3">
+                        <select id="select1" name="select" class="form-control" size="1" style="float: left;">
+                            <option value="0">Please select</option>
+                            <option value="1">Option #1</option>
+                            <option value="2">Option #2</option>
+                            <option value="3">Option #3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Price Agreement</strong>
+                            <small>Form</small>
+                            <button class="btn btn-success" ui-sref="app.new-price-agreement" type="button" style="float: right;">Add New</button>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="select1">Unit</label>
+                                    <div class="col-md-3">
+                                        <select id="select1" name="select" class="form-control" size="1" style="float: left;">
+                                            <option value="0">Please select</option>
+                                            <option value="1">Option #1</option>
+                                            <option value="2">Option #2</option>
+                                            <option value="3">Option #3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label" for="input-normal">Normal Input</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" id="input-normal" name="input-normal" class="form-control" placeholder="Normal">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label" for="input-normal">Start Date</label>
+                                    <div class="col-sm-6">
+                                        <datepicker date-format="yyyy-MM-dd" selector="form-control">
+                                            <div class="input-group">
+                                                <input class="form-control" placeholder="Choose a date" />
+                                                <span class="input-group-addon" style="cursor: pointer">
+                                                    <i class="fa fa-lg fa-calendar"></i>
+                                                </span>
+                                            </div>
+                                        </datepicker>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label" for="input-normal">End Date</label>
+                                    <div class="col-sm-6">
+                                        <datepicker date-format="yyyy-MM-dd" selector="form-control">
+                                            <div class="input-group">
+                                                <input class="form-control" placeholder="Choose a date" />
+                                                <span class="input-group-addon" style="cursor: pointer">
+                                                    <i class="fa fa-lg fa-calendar"></i>
+                                                </span>
+                                            </div>
+                                        </datepicker>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success" type="submit">Submit</button>
+                <button class="btn btn-danger" ui-sref="app.product-lines" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

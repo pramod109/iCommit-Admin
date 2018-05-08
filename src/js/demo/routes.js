@@ -337,4 +337,40 @@ angular
     }
   })
 
+  //pramod109
+  //Routing for product-lines module
+  .state('app.product-lines', {
+    url: '/product-lines',
+    templateUrl: 'product-lines/product-lines.html',
+    ncyBreadcrumb: {
+      label: 'Product Lines'
+    },
+    resolve: {
+      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load controllers
+        return $ocLazyLoad.load({
+          files: ['product-lines/product-lines.controller.js']
+        });
+      }]
+    }
+  })
+
+  //pramod109
+  //Routing for product-lines module
+  .state('app.new-product-line', {
+    url: '/product-lines/new-product-line',
+    templateUrl: 'product-lines/new-product-line/new-product-line.html',
+    ncyBreadcrumb: {
+      label: 'Product Lines'
+    },
+    resolve: {
+      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load controllers
+        return $ocLazyLoad.load({
+          files: ['product-lines/new-product-line/new-product-line.controller.js']
+        });
+      }]
+    }
+  })
+
 }]);

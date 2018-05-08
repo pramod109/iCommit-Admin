@@ -16,7 +16,11 @@ angular
   'ui.router',
   'oc.lazyLoad',
   'ncy-angular-breadcrumb',
-  'angular-loading-bar'
+  'angular-loading-bar',
+  'ngAnimate',
+  'ngSanitize',
+  'ngAria',
+  '720kb.datepicker'
   
 ])
 .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
