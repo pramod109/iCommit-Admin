@@ -1,0 +1,84 @@
+<div ng-controller="NewPlanCtrl">
+    <div class="col-sm-9">
+        <div class="card">
+            <div class="card-header">
+                <strong>New Plan</strong>
+                <small>Form</small>
+
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label" for="input-normal">Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" id="input-normal" name="input-normal" class="form-control" placeholder="Normal">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label">Fixed Term</label>
+                    <div class="col-md-9 col-form-label">
+                        <div class="form-check checkbox">
+                            <input class="form-check-input" type="checkbox" value="" id="check1">
+                            <label class="form-check-label" for="check1">
+                                
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label" for="input-normal">Installments</label>
+                    <div class="col-sm-6">
+                        <input type="text" id="input-normal" name="input-normal" class="form-control" placeholder="Normal">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label">Enforce Installments</label>
+                    <div class="col-md-9 col-form-label">
+                        <div class="form-check checkbox">
+                            <input class="form-check-input" type="checkbox" value="" id="check1">
+                            <label class="form-check-label" for="check1">
+                
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="select1">Interval</label>
+                    <div class="col-md-3">
+                        <select id="select1" name="select" class="form-control" size="1" style="float: left;">
+                            <option value="0">Please select</option>
+                            <option value="1">Interval #1</option>
+                            <option value="2">Interval #2</option>
+                            <option value="3">Interval #3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong>Supplier</strong>
+                            <small>Form</small>
+                            <button class="btn btn-success" ui-sref="app.new-supplier" type="button" style="float: right;">Add New</button>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="select1">Supplier</label>
+                                    <div class="col-md-3">
+                                        <select id="select1" name="select" class="form-control" size="1" style="float: left;">
+                                            <option value="0">Please select</option>
+                                            <option value="1">Supplier #1</option>
+                                            <option value="2">Supplier #2</option>
+                                            <option value="3">Supplier #3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success" type="submit">Submit</button>
+                <button class="btn btn-danger" ui-sref="app.plans" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

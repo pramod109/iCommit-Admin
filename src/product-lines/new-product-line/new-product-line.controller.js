@@ -15,7 +15,7 @@
     function NewProductLineCtrl($scope,$state,$window){
 
         $scope.test = "NewProductLine controller successfully loaded";
-        this.myDate = new Date();
+        //this.myDate = new Date();
 
 
     }

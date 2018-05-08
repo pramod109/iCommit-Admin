@@ -361,13 +361,31 @@ angular
     url: '/product-lines/new-product-line',
     templateUrl: 'product-lines/new-product-line/new-product-line.html',
     ncyBreadcrumb: {
-      label: 'Product Lines'
+      label: 'Product Lines  /  New Product Line'
     },
     resolve: {
       loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
         // you can lazy load controllers
         return $ocLazyLoad.load({
           files: ['product-lines/new-product-line/new-product-line.controller.js']
+        });
+      }]
+    }
+  })
+
+  //pramod109
+  //Routing for new plan module
+  .state('app.new-plan', {
+    url: '/plans/new-plan',
+    templateUrl: 'plans/new-plan/new-plan.html',
+    ncyBreadcrumb: {
+      label: 'Plans  /  New Plan'
+    },
+    resolve: {
+      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+        // you can lazy load controllers
+        return $ocLazyLoad.load({
+          files: ['plans/new-plan/new-plan.controller.js']
         });
       }]
     }
