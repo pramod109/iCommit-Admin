@@ -1,4 +1,126 @@
 <div ng-controller="VouchersCtrl">
-    <h1>Vouchers page under construction</h1>
-    <h3 ng-bind="test"></h3>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-align-justify"></i>Filter Vouchers
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <form class="form-inline">
+                            <div class="form-group mr-1">
+                                <label class="col-form-label mr-4">Subscription</label>
+                                <input type="text" id="if-email" name="if-email" class="form-control" placeholder="Subscription">
+                            </div>
+                            <!-- <div class="form-group mr-1">
+                            <label class="col-form-label mr-3" for="if-password">Password</label>
+                            <input type="password" id="if-password" name="if-password" class="form-control" placeholder="Enter Password..">
+                        </div> -->
+                            <label class="col-form-label mr-3" for="input-normal">From Date</label>
+                            <div class="form-group mr-1">
+
+                                <datepicker date-format="yyyy-MM-dd" selector="form-control">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Choose a date" />
+                                        <span class="input-group-addon" style="cursor: pointer">
+                                            <i class="fa fa-lg fa-calendar"></i>
+                                        </span>
+                                    </div>
+                                </datepicker>
+                            </div>
+                            <label class="col-form-label mr-3" for="input-normal">To Date</label>
+                            <div class="form-group mr-1">
+
+                                <datepicker date-format="yyyy-MM-dd" selector="form-control">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Choose a date" />
+                                        <span class="input-group-addon" style="cursor: pointer">
+                                            <i class="fa fa-lg fa-calendar"></i>
+                                        </span>
+                                    </div>
+                                </datepicker>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <form class="form-inline">
+                            <div class="form-group mr-1">
+                                <label class="col-form-label mr-5">Customer</label>
+                                <input type="text" id="if-email" name="if-email" class="form-control" placeholder="Subscription">
+                            </div>
+                            <div class="form-group mr-1">
+                                <label class="col-form-label mr-3">Transaction Id</label>
+                                <input type="text" id="if-email" name="if-email" class="form-control" placeholder="Transaction Id">
+                            </div>
+                            <div class="form-group mr-1">
+                                <label class="col-form-label mr-3">State</label>
+                                <input type="text" id="if-email" name="if-email" class="form-control" placeholder="State">
+                            </div>
+                        </form>
+                        <button class="btn btn-success" type="submit">Search</button>
+                     </div>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-align-justify"></i>Vouchers
+                    <!-- <button class="btn btn-success" ui-sref="" type="button" style="float:right">Add New</button> -->
+                </div>
+                <div class="card-body">
+
+                    <table class="table table-bordered table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Customer</th>
+                                <th>Supplier</th>
+                                <th>Subscription Id</th>
+                                <th>Transaction Id</th>
+                                <th>Voucher State</th>
+                                <th>Effective Status Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Onion Seeds</td>
+                                <td>Jesse</td>
+                                <td>Kohli</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>Active</td>
+                                <td>2018-02-02</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <nav>
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Prev</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav> -->
+                </div>
+            </div>
+        </div>
+        <!--/.col-->
+    </div>
+    <!--/.row-->
+</div>
 </div>
