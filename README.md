@@ -1,7 +1,6 @@
 # iCommit Admin
 
 Admin Dashboard for the iCommit Project
-Technologies: AngularJS, HTML5, CSS, Javascript, Bootstrap
 
 ## Getting started
 
